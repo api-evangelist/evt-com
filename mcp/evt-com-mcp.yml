@@ -1,0 +1,33 @@
+name: EVT MCP Server
+type: MCPServer
+generated: '2026-10-21'
+method: none
+status: none
+source: https://www.evt.com/news/event-cinemas-brings-session-search-and-booking-to-chatgpt-an-australian-cinema-first/
+description: >-
+  No public MCP server is documented or advertised by EVT. EVT says two of its brands have apps inside
+  ChatGPT: Event Cinemas (session search and ticket booking, "now live", per the EVT press release)
+  and EVT Hotels & Resorts (the release calls it the first ANZ hotel group with an app in ChatGPT).
+  Those apps are only reachable from inside ChatGPT. EVT publishes no MCP endpoint URL, install
+  package or tool list for them, and there is no OpenAPI from which to derive a candidate tool set.
+deployment:
+  mode: none
+  endpoint: null
+  install: null
+  package: null
+  auth: unknown
+  verified: searched
+tools: []
+x-evidence:
+- url: https://www.evt.com/news/event-cinemas-brings-session-search-and-booking-to-chatgpt-an-australian-cinema-first/
+  status: 200
+  finding: Announces the Event Cinemas app in ChatGPT and refers to an EVT Hotels & Resorts app in ChatGPT; names no MCP endpoint or tools.
+- url: https://www.evt.com/.well-known/mcp.json
+  status: 403
+- url: https://www.eventcinemas.com.au/.well-known/mcp.json
+  status: 404
+- url: https://www.evt.com/llms.txt
+  status: 404
+- url: https://www.eventcinemas.com.au/llms.txt
+  status: 404
+x-preflight: contract_discovery verdict mcp=absent on api.evt.com, evt.com, elevate.evt.com, support.jsm.evt.com, www.evt.com (2026-10-21).

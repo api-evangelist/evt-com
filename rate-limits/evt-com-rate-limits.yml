@@ -1,0 +1,6 @@
+name: EVT rate limits
+generated: '2026-10-21'
+method: none
+limit_count: 0
+note: EVT publishes no public API documentation, so no rate limits are documented.
+limits: []

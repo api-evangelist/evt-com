@@ -1,23 +1,110 @@
 aid: evt-com
+
 name: EVT
-description: 'EVT is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: EVT Limited is an Australian entertainment, hospitality and leisure group operating across Australia, New Zealand,
+  Singapore and Southeast Asia. Its Entertainment division runs cinemas (including Event Cinemas, IMAX and ScreenX screens,
+  and outdoor Moonlight Cinemas), theatre, bars and restaurants; Travel covers hotels and resorts such as QT, Rydges and LyLo
+  plus Thredbo Resort; Ventures spans property, development, entertainment technology services and media. In October 2026
+  Event Cinemas announced an app in ChatGPT for session search and ticket booking. Surfaced via the API Evangelist harvest
+  backlog (australia-apidays-2026).
+
 url: https://raw.githubusercontent.com/api-evangelist/evt-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Entertainment
+- Cinemas
+- Hospitality
+- Hotels
+- Travel
+- Leisure
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://cdn.evt.com/wp-content/uploads/2022/09/28192447/EVT_Wordmark_REV-3.png
+
 common:
+- type: SecurityTxt
+  url: well-known/evt-com-support-security.txt
+- type: WellKnown
+  url: well-known/evt-com-well-known.yml
+- type: Hosts
+  url: hosts/evt-com-hosts.yml
+- type: IntegrationEdges
+  url: integrations/evt-com-integration-edges.yml
+- type: Vendors
+  url: vendors/evt-com-vendors.yml
 - type: Website
-  url: https://evt.com/
+  url: https://www.evt.com/
+- type: DomainSecurity
+  url: security/evt-com-domain-security.yml
+- type: AboutUs
+  url: https://www.evt.com/about-us/
+- type: Contact
+  url: https://www.evt.com/contact/
+- type: Support
+  url: https://support.jsm.evt.com/servicedesk/customer/portals
+- type: Newsroom
+  url: https://www.evt.com/news-press/
+- type: InvestorRelations
+  url: https://www.evt.com/investors/
+- type: PrivacyPolicy
+  url: https://www.evt.com/privacy-policy/
+- type: Disclaimer
+  url: https://www.evt.com/disclaimer/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/amalgamated-holdings-limited
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website www.evt.com verified 200; title "Home - EVT", footer "©2026 EVT Limited". No developer portal, docs, API
+    reference, pricing or GitHub org linked from the site.
+  evidence:
+  - url: https://evt.com/
+    status: 200
+  - url: https://www.evt.com/about-us/
+    status: 200
+  - url: https://www.evt.com/about-us/
+    status: 200
+  - url: https://www.evt.com/contact/
+    status: 200
+  - url: https://support.jsm.evt.com/servicedesk/customer/portals
+    status: 200
+  - url: https://www.evt.com/news-press/
+    status: 200
+  - url: https://www.evt.com/investors/
+    status: 200
+  - url: https://www.evt.com/privacy-policy/
+    status: 200
+  - url: https://www.evt.com/disclaimer/
+    status: 200
+  - url: https://www.linkedin.com/company/amalgamated-holdings-limited
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 12
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

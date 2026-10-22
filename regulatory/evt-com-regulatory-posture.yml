@@ -1,0 +1,77 @@
+generated: '2026-10-21'
+method: searched
+probe: true
+source: https://www.evt.com/privacy-policy/
+notes: >-
+  EVT (EVT Limited, formerly Amalgamated Holdings Limited) publishes one legal page relevant here, the EVT Group
+  Privacy Policy ("Updated June 2026"), governed by the Australian Privacy Principles and the NZ Information Privacy
+  Principles. The only other legal page linked from the site is /disclaimer/ (a website disclaimer, no regulatory
+  signals). No trust center, subprocessor page, accessibility statement, AI or transparency report was found.
+signals:
+  data_subject_request:
+    url: https://www.evt.com/privacy-policy/
+    section: '14. Access to and correction of Personal Information'
+    rights_named: [access, correction, deletion, withdrawal of consent]
+    escalation: Office of the Australian Information Commissioner (Australia); Office of the Privacy Commissioner (New Zealand)
+    evidence:
+    - source: https://www.evt.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "You can request access to, correction, or deletion of your Personal Information or withdraw your consent to our use of your Personal Information by contacting us at"
+    - source: https://www.evt.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "You have a right to access and correct most of the Personal Information we hold about you.  If you wish to access or correct your Personal Information, please contact us via the details provided in the “contact us” section below."
+    - source: https://www.evt.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "In certain cases we may charge you an administration fee for providing you with access to the information you have asked for, but we will inform you of this before proceeding."
+    note: >-
+      Access and correction are stated as rights (section 14); deletion and consent withdrawal are offered by email
+      request in the summary (section 1). Identity verification may be required and an administration fee may apply.
+      No response time is stated. The contact email is obfuscated on the page and is not recorded here.
+  data_residency:
+    url: https://www.evt.com/privacy-policy/
+    section: '10. Overseas disclosure'
+    regions: [Australia, New Zealand, Hong Kong, Singapore, United Kingdom, United States]
+    evidence:
+    - source: https://www.evt.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "The EVT Group, its affiliates, service providers, and related entities use data storage facilities in Australia and in foreign countries including New Zealand, Hong Kong, Singapore, the United Kingdom and the United States of America."
+    - source: https://www.evt.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "Our Marketing Partners are located and/or use data storage facilities located in Australia and in foreign countries including Hong Kong, India, Japan, The Philippines, New Zealand, Singapore, Sri Lanka, United Kingdom and in Europe and the United States of America."
+    note: >-
+      A disclosure of where data may be stored, not a residency commitment: data leaves Australia, and the policy
+      relies on "commercially reasonable steps" to ensure overseas recipients have appropriate safeguards.
+  subprocessors:
+    url: https://www.evt.com/privacy-policy/
+    section: '9. Our payment processors'
+    named: [PayPal (Braintree), Stripe, Windcave, Karta (545490 Pty Ltd), ROKT Pte Ltd, Movio Limited, Braze Inc, Facebook]
+    evidence:
+    - source: https://www.evt.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "These processors are independent data controllers, which means that they determine the purposes for and means by which they process personal information."
+    - source: https://www.evt.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "To enable delivery of personalised advertisements or targeted promotional content, we share your Personal Information with Braze, Inc, an American company that provides marketing services to the EVT Group."
+    note: >-
+      No dedicated subprocessor list. The policy names payment processors (PayPal/Braintree, Stripe, Windcave, Karta,
+      described as independent controllers) and marketing partners (ROKT, Movio, Braze, Facebook) inline; other
+      service providers are described only by category in section 7.
+  data_retention:
+    url: https://www.evt.com/privacy-policy/
+    section: '8. Marketing'
+    evidence:
+    - source: https://www.evt.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "ROKT retains such Shared Information for 90 days."
+    note: >-
+      The only retention period on the page, and it applies to one marketing partner (ROKT) only. EVT states no
+      retention period for its own holdings; section 13 (Storage and security) describes security practices but
+      no retention schedule.

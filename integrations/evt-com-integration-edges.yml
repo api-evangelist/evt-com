@@ -1,0 +1,34 @@
+generated: '2026-10-21'
+method: searched
+source:
+- https://www.evt.com/news/event-cinemas-brings-session-search-and-booking-to-chatgpt-an-australian-cinema-first/
+- https://zapier.com/apps/evt-com/integrations
+- https://zapier.com/apps/evt/integrations
+- https://n8n.io/integrations/evt-com/
+- https://n8n.io/integrations/evt/
+- https://composio.dev/toolkits/evt-com
+- https://monid.ai/tools/evt-com
+checked:
+- https://www.evt.com/
+- https://www.evt.com/news/event-cinemas-brings-session-search-and-booking-to-chatgpt-an-australian-cinema-first/
+- https://au.variety.com/2026/film/news/event-cinemas-launches-app-within-chatgpt-41687
+- https://composio.dev/toolkits/evt-com
+- https://monid.ai/tools/evt-com
+- https://n8n.io/integrations/evt-com/
+- https://n8n.io/integrations/evt/
+- https://zapier.com/apps/evt-com/integrations
+- https://zapier.com/apps/evt/integrations
+summary: EVT publishes no developer portal, API docs or partner/integrations page. Its own newsroom announces an
+  Event Cinemas app in ChatGPT (session search and ticket booking) and states EVT Hotels & Resorts also launched
+  an app in ChatGPT. No tool list or MCP endpoint for either app is published by EVT; the connector was not called.
+marketplace_apps: []
+edges:
+- partner_name: OpenAI ChatGPT
+  partner: openai
+  type: claimed
+  relationship: distribution-channel
+  direction: provider-built
+  use_case: Session search and ticket booking for Event Cinemas from inside ChatGPT
+  evidence: https://www.evt.com/news/event-cinemas-brings-session-search-and-booking-to-chatgpt-an-australian-cinema-first/
+  partner_url: https://openai.com/
+templates: []
